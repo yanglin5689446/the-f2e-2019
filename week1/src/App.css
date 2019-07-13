@@ -1,0 +1,182 @@
+
+
+.input-container {
+  margin-left: 5rem;
+  margin-top: 3rem;
+}
+
+.new-mission {
+  width: 445px;
+  height: 56px;
+  color: var(--main-color);
+  border: none;
+}
+.new-mission::placeholder {
+  color: var(--main-color);
+  font-style: italic;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-left: 1rem;
+}
+
+.add-button {
+  color: var(--main-color);
+  border: none;
+  background: transparent;
+  margin-left: -2.5rem;
+  font-size: 1.5rem;
+  vertical-align: -6px;
+}
+
+.sidebar {
+  width: 30vw;
+  height: 100vh;
+  background: #003164;
+  position: fixed;
+  right: 0;
+}
+
+.sidebar-icons-container {
+  position: absolute;
+  top: 3rem;
+  right: 5rem;
+}
+
+.sidebar-button {
+  color: white;
+  background: transparent;
+  border: none;
+  margin-bottom: 3rem;
+}
+.sidebar-button .material-icons {
+  font-size: 2.25rem;
+}
+
+.decoration-text {
+  color: white;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: .1rem;
+  display: inline-block;
+  transform-origin: 100% 0%;
+  transform: rotate(90deg);
+  position: absolute;
+  right: 5rem;
+  bottom: 3rem;
+}
+
+.play-button-circle {
+  background-color: var(--main-color);
+  width: 50vh;
+  height: 50vh;
+  position: fixed;
+  top: 25vh;
+  right: calc(30vw - 25vh);
+  border-radius: 50%;
+}
+
+.play-button-circle::before {
+  content: '';
+  position: fixed;
+  top: 23.5vh;
+  right: calc(30vw - 26.5vh);
+  width: 53vh;
+  height: 53vh;
+  border-radius: 50%;
+  border: .25rem solid var(--main-color);
+}
+
+.play-button {
+  background: white;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  margin: auto;
+  width: 6rem;
+  height: 6rem;
+}
+
+.play-button .material-icons {
+  font-size: 4rem;
+  line-height: 6rem;
+  color: var(--main-color);
+}
+
+.current-mission {
+  position: fixed;
+  top: calc(50vh - 8rem);
+  left: 5rem;
+}
+.current-mission .decoration-circle {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: transparent;
+  border: .125rem solid var(--secondary-color);
+}
+
+.current-mission .title {
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.current-mission .small-circle {
+  width: .75rem;
+  height: .75rem;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px solid var(--main-color);
+}
+
+.timer {
+  color: var(--main-color);
+  font-size: 11rem;
+  font-weight: bold;
+  position: fixed;
+  top: calc(50vh - 5.5rem);
+  left: 5rem;
+}
+
+.todo-list {
+  position: fixed;
+  width: 445px;
+  bottom: 3rem;
+  left: 5rem;
+}
+
+.todo-item {
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+.todo-item .decoration-circle{
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: transparent;
+  border: .125rem solid var(--secondary-color);
+}
+
+.todo-item .title {
+  color: var(--secondary-color);
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.todo-item .play {
+  width: 1rem;
+  height: 1rem;
+}
+
+.todo-item .play .material-icons {
+  color: var(--secondary-color);
+}
+
+.more {
+  color: var(--main-color);
+  cursor: pointer;
+}
