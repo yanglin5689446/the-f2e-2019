@@ -1,0 +1,33 @@
+
+@import '~variable.scss';
+
+.card {
+  --offset: 0;
+  width: $cell-width;
+  height: $cell-height;
+  border-radius: 10px;
+  background: white;
+  border: 1px solid grey;
+  position: absolute;
+  left: -5px;
+  top: calc(2.2vw * var(--offset));
+  .suit {
+      position: absolute;
+      text-align: center;
+      line-height: .8rem;
+      img {
+          width: 1vw;
+          height: 1vw;
+      }
+      &.top {
+          top: .4vw;
+          left: .2vw;
+      }
+      &.bottom {
+          bottom: .4vw;
+          right: .3vw;
+          transform-origin: 0.5;
+          transform: rotate(180deg);
+      }
+  }
+}

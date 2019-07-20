@@ -1,0 +1,18 @@
+
+@import '~variable.scss';
+
+.cell {
+  position: relative;
+  width: $cell-width;
+  height: $cell-height;
+  border-radius: 10px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, .4);
+  &.final { border-color: rgba(255, 255, 255, .6); }
+}
+
+.cell-container {
+  display: flex;
+  justify-content: space-between;
+}
