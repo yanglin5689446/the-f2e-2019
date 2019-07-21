@@ -1,11 +1,11 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Card from 'components/Card'
 import './style.scss'
 
-const NestedDraggable = ({ nested, current }) => {
+const NestedDraggable = ({ type, nested, current }) => {
   return (
     <div 
-      className='nested-draggable'
+      className={`nested-draggable ${type}`}
       draggable
       onDragStart={event => {
         event.dataTransfer.setData('data', JSON.stringify(current))
