@@ -1,0 +1,9 @@
+
+.nested-draggable {
+  position: absolute;
+  top: 2.2vw;
+}
+
+.cell-container .nested-draggable:first-child {
+  top: 0;
+}

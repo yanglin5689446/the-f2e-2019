@@ -19,15 +19,15 @@ const App = () => {
       </div>
       <div className='d-flex justify-content-between'>
         <div className='cell-container'>
-          { cells.free.map((card, index) => <Cell key={index} type='free' cards={[card]} />) }
+          { cells.free.map((cards, index) => <Cell key={index} index={index} type='free' cards={cards} />) }
         </div>
         <div className='cell-container'>
-          { cells.free.map((card, index) => <Cell key={index} type='final' cards={[card]} />) }
+          { cells.final.map((cards, index) => <Cell key={index} index={index} type='final' cards={cards} />) }
         </div>
       </div>
       
       <div className='cell-container'>
-        { cells.standard.map((cards, index) => <Cell key={index} type='standard' cards={cards} />) }
+        { cells.standard.map((cards, index) => <Cell key={index} index={index} type='standard' cards={cards} />) }
       </div>
     </div>
   )
