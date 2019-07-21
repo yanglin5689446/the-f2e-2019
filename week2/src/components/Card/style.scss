@@ -2,15 +2,14 @@
 @import '~variable.scss';
 
 .card {
-  --offset: 0;
   width: $cell-width;
   height: $cell-height;
   border-radius: 10px;
   background: white;
   border: 1px solid grey;
-  position: absolute;
-  left: -5px;
-  top: calc(2.2vw * var(--offset));
+  margin-left: -5px;
+  margin-top: -5px;
+
   .suit {
       position: absolute;
       text-align: center;

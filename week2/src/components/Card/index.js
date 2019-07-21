@@ -4,8 +4,8 @@ import React from 'react'
 import { suits } from 'constants.js'
 import './style.scss'
 
-const Card = ({ suit, value, offset }) => (
-  <div className='card' style={{ '--offset': offset }}>
+const Card = ({ suit, value }) => (
+  <div className='card'>
     <div className="suit top">
       <div>{ value }</div>
       <img src={suits[suit]} alt=""/>
